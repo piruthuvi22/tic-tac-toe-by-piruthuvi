@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(72, 255, 154);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1,span,h2,h5,h4{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(255, 81, 17);
+}
+#inputtext{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(255, 81, 17);
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgb(255, 159, 159);
+  border: 5px double rgb(109, 109, 109);
+  float: left;
+  color: slateblue;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 200px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  width: 200px;
+}
+.square:hover{
+  background: rgb(243, 139, 139);
+  cursor: pointer;
+
+}
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+#gameBoard{
+  display: none;
+}
+.playerName{
+font-size: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
