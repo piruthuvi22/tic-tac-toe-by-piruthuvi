@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/tic-tac-toe-by-piruthuvi/static/css/main.01d73037.chunk.css",
+    "main.js": "/tic-tac-toe-by-piruthuvi/static/js/main.e00d3385.chunk.js",
+    "main.js.map": "/tic-tac-toe-by-piruthuvi/static/js/main.e00d3385.chunk.js.map",
+    "runtime-main.js": "/tic-tac-toe-by-piruthuvi/static/js/runtime-main.ebdacbf5.js",
+    "runtime-main.js.map": "/tic-tac-toe-by-piruthuvi/static/js/runtime-main.ebdacbf5.js.map",
+    "static/js/2.3549a394.chunk.js": "/tic-tac-toe-by-piruthuvi/static/js/2.3549a394.chunk.js",
+    "static/js/2.3549a394.chunk.js.map": "/tic-tac-toe-by-piruthuvi/static/js/2.3549a394.chunk.js.map",
+    "index.html": "/tic-tac-toe-by-piruthuvi/index.html",
+    "precache-manifest.71b5503c9c831d33e96d3671a4853140.js": "/tic-tac-toe-by-piruthuvi/precache-manifest.71b5503c9c831d33e96d3671a4853140.js",
+    "service-worker.js": "/tic-tac-toe-by-piruthuvi/service-worker.js",
+    "static/css/main.01d73037.chunk.css.map": "/tic-tac-toe-by-piruthuvi/static/css/main.01d73037.chunk.css.map",
+    "static/js/2.3549a394.chunk.js.LICENSE.txt": "/tic-tac-toe-by-piruthuvi/static/js/2.3549a394.chunk.js.LICENSE.txt",
+    "static/media/corona.gif": "/tic-tac-toe-by-piruthuvi/static/media/corona.e00229b8.gif",
+    "static/media/human.gif": "/tic-tac-toe-by-piruthuvi/static/media/human.fb69b0b9.gif",
+    "static/media/music.mp3": "/tic-tac-toe-by-piruthuvi/static/media/music.a92faed7.mp3",
+    "static/media/pop1.mp3": "/tic-tac-toe-by-piruthuvi/static/media/pop1.cb965701.mp3",
+    "static/media/pop2.mp3": "/tic-tac-toe-by-piruthuvi/static/media/pop2.f4051d60.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebdacbf5.js",
+    "static/js/2.3549a394.chunk.js",
+    "static/css/main.01d73037.chunk.css",
+    "static/js/main.e00d3385.chunk.js"
+  ]
+}
