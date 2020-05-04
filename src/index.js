@@ -156,7 +156,7 @@ class Board extends React.Component {
                                     value={this.state.input}
                                     onChange={this.handleChange2} required />
                             </div>
-                            <button id="submit" className="btn btn-success mb-3" type='submit' >Submit!</button>
+                            <button id="submit" className="btn btn-success mb-3" type='submit' >Start!</button>
                         </form>
                         <button id="restart" onClick={refreshPage} className="btn btn-success mb-3" >Restart!</button>
                         <h5>Player 1 : {this.state.submit1}</h5>
