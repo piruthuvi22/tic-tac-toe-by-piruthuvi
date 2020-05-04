@@ -4,13 +4,17 @@ body {
 }
 
 h1,span,h2,h5,h4{
+  color: rgba(255, 69, 69, 0.89);
+text-shadow: 0 0 2px rgba(180, 255, 83, 0.794), 0 0 10px rgba(180, 255, 83, 0.794), 0 0 5px rgba(180, 255, 83, 0.794), 0 0 5px #3fd2ff, 0 0 5px #3fd2ff, 0 0 5px #3fd2ff, 0 0 5px #3fd2ff, 0 0 5px #3fd2ff;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* color: rgb(255, 81, 17); */
+}
+/* #inputtext{
+  background-image: url("./wood.jpg");
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(255, 81, 17);
-}
-#inputtext{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgb(255, 81, 17);
-}
+} */
 .board-row:after {
   clear: both;
   content: "";
@@ -64,4 +68,28 @@ h1,span,h2,h5,h4{
 .playerName{
 font-size: 20px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#submit,#restart{
+  transition: transform 0.5s;
+}
+#submit:hover {
+  transform:scale(1.2)
+}
+#restart:hover {
+  transform:scale(1.2)
+}
+/* #btn1{
+  height: 37px;
+  width: 37px;  
+  background-image: url("./hiclipart.com.png");
+  background-repeat:no-repeat;
+} */
+.css-doodle
+{
+  background: -webkit-radial-gradient(center, ellipse farthest-side, #33ff70 0%, #b9ff2e 100%);
+  background: -moz-radial-gradient(center, ellipse farthest-side, #33ff70 0%, #b9ff2e 100%);
+  background: -ms-radial-gradient(center, ellipse farthest-side, #33ff70 0%, #b9ff2e 100%);
+  background: -o-radial-gradient(center, ellipse farthest-side, #33ff70 0%, #b9ff2e 100%);
+  background: radial-gradient(ellipse farthest-side at center, #33ff70 0%, #b9ff2e 100%);
+  
 }

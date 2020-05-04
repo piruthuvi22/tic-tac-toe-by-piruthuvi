@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './bootstrap.min.css';
+import './animation.css'
 const corona = require("./corona.gif");
 const human = require("./human.gif");
 const t1 = require("./pop1.mp3");
@@ -102,11 +103,23 @@ class Board extends React.Component {
         let status;
         if (winner) {
             if (winner === corona) {
-                status = <h2>Winner  : {this.state.submit1}</h2>
+                status = <div class="ribbon">
+                    <div class="ribbon-stitches-top"></div>
+                    <div class="ribbon-content">
+                        <h1><b>Winner  : {this.state.submit1}</b></h1>
+                    </div>
+                    <div class="ribbon-stitches-bottom"></div>
+                </div>
                 bleep.play();
             }
             else {
-                status = <h2>Winner  : {this.state.submit2}</h2>
+                status = <div class="ribbon">
+                    <div class="ribbon-stitches-top"></div>
+                    <div class="ribbon-content">
+                        <h1><b>Winner  : {this.state.submit2}</b></h1>
+                    </div>
+                    <div class="ribbon-stitches-bottom"></div>
+                </div>
                 bleep.play();
 
             }
@@ -122,37 +135,37 @@ class Board extends React.Component {
         return (
             <div className="container">
                 <div className="text-center">
-                    <img className="w-50 mt-3" alt="" src="https://cdn.clipart.email/0fc370ce506fb192d74fdcd74c4eae94_stone-clip-tic-tac-transparent-png-clipart-free-download-ywd_1198-366.gif"></img>
+                    <img id="anim" className="w-50 mt-1 animated bounceInDown" alt="" src="https://cdn.clipart.email/0fc370ce506fb192d74fdcd74c4eae94_stone-clip-tic-tac-transparent-png-clipart-free-download-ywd_1198-366.gif"></img>
                 </div>
                 <div className="row">
-                    <div className="col-3 mt-3">
+                    <div className="col-12 col-lg-4 col-md-3 col-sm-12 mt-3">
                         <form onSubmit={this.handleSubmit}>
                             <div className="form-group">
-                                <span>Player 1</span>
+                                <h1 id="anim" className="animated bounceInDown">Player 1</h1>
                                 <input
-                                    id="inputtext"
-                                    className="form-control"
+                                    id=""
+                                    className="form-control css-input"
                                     value={this.state.input}
                                     onChange={this.handleChange1} required />
                             </div>
                             <div className="form-group">
-                                <span>Player 2</span>
+                                <h1 id="anim" className="animated bounceInDown">Player 2</h1>
                                 <input
-                                    id="inputtext"
-                                    className="form-control"
+                                    id=""
+                                    className="form-control css-input"
                                     value={this.state.input}
                                     onChange={this.handleChange2} required />
                             </div>
                             <button id="submit" className="btn btn-success mb-3" type='submit' >Submit!</button>
                         </form>
-                        <button onClick={refreshPage} className="btn btn-success mb-3" >Restart!</button>
+                        <button id="restart" onClick={refreshPage} className="btn btn-success mb-3" >Restart!</button>
                         <h5>Player 1 : {this.state.submit1}</h5>
+
                         <h5>Player 2 : {this.state.submit2}</h5>
                         <div className="status">{status}</div>
-
                     </div>
 
-                    <div className="col-9 mt-3" >
+                    <div className="col-12 col-lg-8 col-md-9 col-sm-12 mt-5" >
                         <div id="gameBoard">
                             <div className="board-row">
                                 {this.renderSquare(0)}
